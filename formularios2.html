@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos de inputs</h1>
+    <form action="procesa.php" method="get">
+          <fieldset>
+            <legend>Datos Personales</legend>
+            <p>
+                <label for="nom">Nombre: 
+                    <input
+                        type="text" maxlength="6" name="nombre" id="nom" required placeholder="Escriba su nombre completo">
+                </label>
+            </p>
+            <p>
+                <label for="pob">Población: 
+                    <input type="text" value="Alcázar de San Juan" maxlength="50" name="pob" id="pob" autofocus>
+                </label>
+            </p>
+                <p>
+                <label for="contrase">Contraseña: 
+                    <input type="password" maxlength="6" minlength="4" name="contrase" id="contrase">
+                </label>
+            </p>
+            <p>
+                <label for="hombre">
+                    Hombre: 
+                    <input type="radio" value="H" id="hombre" name="genero" checked>
+                </label>
+                <label for="mujer">
+                    Mujer: 
+                    <input type="radio" value="M" id="mujer" name="genero">
+                </label>
+            </p>
+            <p>
+                <label for="fumador">
+                    Fumador: 
+                    <input type="checkbox" name="fuma" id="fumador" checked>
+                </label>
+            </p>
+        </fieldset>
+        <p>
+            <label for="prov">
+                Provincia: 
+                <select name="prov" id="prov">
+                    <option value="cr">Ciudad Real</option>
+                    <option value="ab">Albacete</option>
+                    <option value="gu">Guadalajara</option>
+                    <option value="cu">Cuenca</option>
+                    <option value="to" selected>Toledo</option>
+                </select>
+                <!--ejemplo de campo textarea-->
+                <p>
+                    <label for="obs">
+                        Observaciones: 
+                        <textarea name="obs" id="obs" cols="10" rows="6">
+                            Escriba algo...
+                        </textarea>
+                    </label>
+                </p>
+                <!--ejemplo de campo color-->
+                <p>
+                    <label for="color">
+                        Color: 
+                        <input type="color" name="color" id="color" value="#ff0000">
+                    </label>
+                </p>
+                <!--ejemplo de campo fecha-->
+                <p>
+                    <label for="fecha-nac">
+                        Fecha de nacimiento: 
+                        <input type="date" name="color" id="fecha-nac">
+                    </label>
+                </p>
+                <!--ejemplo de campo numérico-->
+                <p>
+                    <label for="edad">
+                        Números: 
+                        <input type="number" name="edad" id="edad" min="0" max="100">
+                    </label>
+                </p>
+                <!--ejemplo de campo email-->
+                <p>
+                    <label for="email">
+                        Email: 
+                        <input type="email" name="email" id="email">
+                    </label>
+                </p>
+                <!--ejemplo de campo file-->
+                <p>
+                    <label for="foto">
+                        Adjunar foto: 
+                        <input type="file" name="foto" id="foto">
+                    </label>
+                </p>
+            </label>
+        </p>
+        <!--Botones de envío y reset-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar formulario">
+        </p>
+    </form>
+  
+</body>
+</html>
